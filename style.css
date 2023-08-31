@@ -410,17 +410,3 @@ hr {
 
 
 
-.teclado {background-color: #7c003e; display: grid; gap: 10px; grid-template-columns: repeat(3,1fr); padding: 10px;}
-
-.tecla {color:#e076ad; background-color: #7c003e;}
-
-.tecla.ativa,
-.tecla:active{background-color: #7c003e;
-color: #e076ad; outline: none;
-}
-
-.tecla.focus,
-.tecla:focus {outline: none; box-shadow: 1px 1px 10px #7c003e;}
-
-.tecla.active:focus,
-.tecla.active:focus{box-shadow: 3px 3px 0 #7c003e;}
