@@ -6,11 +6,8 @@ const lista = document.querySelectorAll('.tecla');
 let Contador = 0;
 
 while (Contador < 9) {
-    lista[0].onclick = Toca;
+    lista[Contador].onclick = Toca;
     Contador = Contador + 1;
     console.log(Contador);
 }
 
-if (Contador = 9) {
-    Contador = 0;
-} 
