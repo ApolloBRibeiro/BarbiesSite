@@ -3,4 +3,6 @@ function Toca () {
 }
 const lista = document.querySelectorAll('.tecla');
 
+let Contador = 0;
+
 document.querySelector('.tecla_pom').onclick = Toca;
