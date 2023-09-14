@@ -11,4 +11,6 @@ while (Contador < 9) {
     console.log(Contador);
 }
 
-
+if (Contador = 9) {
+    Contador = 0;
+} 
