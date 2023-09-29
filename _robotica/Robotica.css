@@ -336,7 +336,7 @@ td {
 .tecla {color:#e076ad; background-color: #7c003e;}
 
 .tecla.ativa,
-.tecla:active{background-color: #7c003e;
+.tecla:active{background-color: #6e2b4c;
 color: #e076ad; outline: none;
 }
 
