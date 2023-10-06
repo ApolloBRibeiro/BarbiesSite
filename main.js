@@ -5,7 +5,7 @@ const lista = document.querySelectorAll('.tecla');
 
 let Contador = 0;
 
-for (Contador < lista.length) {
+for ( let Contador < lista.length) {
 
     const tecla = lista[tecla];
     const classe = lista[tecla].classList[1];
@@ -14,8 +14,6 @@ for (Contador < lista.length) {
     const idAudio = `#som_${classe}`;
     console.log(idAudio);
 
-    lista[Contador].onclick = function () {
-        Toca(idAudio);
     }
    
 
