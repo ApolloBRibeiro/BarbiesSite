@@ -3,9 +3,8 @@ function Toca(idElementoAudio) {
 }
 const lista = document.querySelectorAll('.tecla');
 
-let Contador = 0;
 
-for ( let Contador < lista.length) {
+for ( let Contador = 0; Contador < lista.length; Contador++ ) {
 
     const tecla = lista[tecla];
     const classe = lista[tecla].classList[1];
@@ -18,8 +17,6 @@ for ( let Contador < lista.length) {
         Toca(idAudio);
     }
    
-
-    Contador = Contador + 1;
 
     tecla.onkeydown = function (evento) {
     if (evento.code === 'Space' || evento.code ==='Enter') {
