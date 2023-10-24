@@ -216,7 +216,7 @@ left: 100px;
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: rgb(255, 30, 169);
   color: white;
   transform: rotateY(180deg);
 }
