@@ -169,12 +169,47 @@ left: 100px;
   display: flex;
 }
 
-
-
 .equipe {
+  color: rgb(0, 0, 0);
+  display: block;
   list-style: none;
-  display: flex;
+  padding: 0px;
+  margin: 15px;
 }
+
+.equipe-titulo {
+  margin-left: 0;
+  left: 59px;
+  top: 2px;
+  font-family: "MalibuBarbie", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 45px;
+  line-height: 70px;
+  text-shadow: #ff3a99 5px 3px 0px;
+  color: #ffffff;
+}
+
+.equipe-toda {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-content: space-around;
+}
+
+.equipe-div {
+  text-align: center;
+  font-size: 20px;
+  
+}
+
+.equipe-imagem {
+  width: 200px;
+  height: 200px;
+  float: right;
+}
+
+
+
 
 .flip-card {
   background-color: transparent;
@@ -215,8 +250,8 @@ left: 100px;
 
 /* Style the back side */
 .flip-card-back {
-  background-color: rgb(255, 30, 169);
-  color: white;
+
+  color: black;
   transform: rotateY(180deg);
 }
 
@@ -275,42 +310,6 @@ hr {
   float: right;
 }
 
-.equipe {
-  color: rgb(0, 0, 0);
-  display: block;
-
-  padding: 0px;
-  margin: 15px;
-}
-
-.equipe-titulo {
-  margin-left: 0;
-  left: 59px;
-  top: 2px;
-  font-family: "MalibuBarbie", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 45px;
-  line-height: 70px;
-  text-shadow: #ff3a99 5px 3px 0px;
-  color: #ffffff;
-}
-
-.equipe-toda {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  justify-content: space-around;
-}
-
-.equipe-div {
-  text-align: center;
-  font-size: 20px;
-  
-}
-
-.equipe-imagem {
-  width: 200px;
-}
 
 .name {
   text-align: center;
