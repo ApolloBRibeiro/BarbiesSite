@@ -331,22 +331,40 @@ td {
     }
   }
 
-  .teclado {background-color: #7c003e; display: grid; gap: 10px; grid-template-columns: repeat(3,1fr); padding: 10px;}
+ /* Estilos para o teclado */
+.teclado {
+  background-color: #7c003e;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+}
 
-.tecla {color:#e076ad; background-color: #7c003e;}
+.tecla {
+  color: #e076ad;
+  background-color: #7c003e;
+}
 
 .tecla.ativa,
-.tecla:active{background-color: #6e2b4c;
-color: #e076ad; outline: none;
+.tecla:active {
+  background-color: #6e2b4c;
+  color: #e076ad;
+  outline: none;
 }
 
 .tecla.focus,
-.tecla:focus {outline: none; box-shadow: 1px 1px 10px #7c003e;}
+.tecla:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px #7c003e;
+}
 
 .tecla.active:focus,
-.tecla.active:focus{box-shadow: 3px 3px 0 #7c003e;}
+.tecla.active:focus {
+  box-shadow: 3px 3px 0 #7c003e;
+}
 
-.container{
+/* Estilos para o container */
+.container {
   margin: 0 auto;
   padding: 0 auto;
   z-index: 12;
@@ -358,7 +376,8 @@ color: #e076ad; outline: none;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
-.container input[type="text"]{
+
+.container input[type="text"] {
   width: 100%;
   height: 100px;
   margin: 0 3px;
@@ -371,7 +390,8 @@ color: #e076ad; outline: none;
   pointer-events: none;
   background: transparent;
 }
-.container input[type="button"]{
+
+.container input[type="button"] {
   height: 65px;
   color: #fff;
   width: calc(100% / 4 - 5px);
@@ -384,6 +404,7 @@ color: #e076ad; outline: none;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.container input[type="button"]:hover{
+
+.container input[type="button"]:hover {
   background: rgba(255, 255, 255, 0.1);
 }
