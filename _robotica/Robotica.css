@@ -347,6 +347,8 @@ color: #e076ad; outline: none;
 .tecla.active:focus{box-shadow: 3px 3px 0 #7c003e;}
 
 .container{
+  margin: 0 auto;
+  padding: 0 auto;
   z-index: 12;
   width: 360px;
   padding: 15px;
