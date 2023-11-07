@@ -38,39 +38,3 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
 
 }
 
-// Definindo os botões da calculadora
-const buttons = document.querySelectorAll(".calculator-button");
-const inputOperation = document.querySelector(".calculator-operation");
-const inputResult = document.querySelector(".calculator-operation-result");
-
-// Adicionando manipuladores de eventos para os botões da calculadora
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    const buttonText = button.textContent;
-
-    if (buttonText === "C") {
-      // Limpar a entrada
-      inputOperation.textContent = "";
-      inputResult.textContent = "";
-    } else if (buttonText === "=") {
-      try {
-        // Calcular o resultado da operação
-        const result = eval(inputOperation.textContent);
-        inputResult.textContent = result;
-      } catch (error) {
-        // Exibir erro se a entrada for inválida
-        inputResult.textContent = "Erro";
-      }
-    } else {
-      // Adicionar o texto do botão à entrada
-      inputOperation.textContent += buttonText;
-    }
-  });
-});
-
-// Adicionando manipulador de evento para o botão de tema escuro/claro
-const toggler = document.getElementById("toggler");
-toggler.addEventListener("click", () => {
-  const calculator = document.querySelector(".calculator");
-  calculator.classList.toggle("dark");
-});
