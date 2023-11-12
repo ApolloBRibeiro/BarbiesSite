@@ -38,3 +38,44 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
 
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    const forms = document.forms;
+    const buttons = document.querySelectorAll(".buttons input");
+  
+    buttons.forEach((button) => {
+      button.addEventListener("click", function () {
+        handleButtonClick(button.value);
+      });
+    });
+  
+    document.addEventListener("keydown", function (event) {
+      const keyPressed = event.key;
+  
+      // Verifica se a tecla pressionada corresponde a uma tecla da calculadora
+      if (keyPressed.match(/[0-9+\-*/.=]/)) {
+        event.preventDefault();
+        handleButtonClick(keyPressed);
+      } else if (keyPressed === "Backspace") {
+        event.preventDefault();
+        handleButtonClick("DEL");
+      } else if (keyPressed === "Enter") {
+        event.preventDefault();
+        handleButtonClick("=");
+      }
+    });
+  
+    function handleButtonClick(value) {
+      if (value === "AC") {
+        forms.answer.value = "";
+      } else if (value === "DEL") {
+        forms.answer.value = forms.answer.value.slice(0, -1);
+      } else if (value === "=") {
+        forms.answer.value = eval(forms.answer.value);
+      } else {
+        forms.answer.value += value;
+      }
+    }
+  });
+  
+  
+
